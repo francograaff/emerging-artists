@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+/* Ensure all text uses normal weight and black color by default */
+* {
+  font-weight: normal;
+  color: #000000 !important;
+}
+
+/* Ensure all backgrounds are white by default */
+* {
+  background-color: #ffffff !important;
+}
+
+/* Override any existing text color classes */
+.text-gray-900, .text-gray-800, .text-gray-700, .text-gray-600, .text-gray-500, 
+.text-gray-400, .text-gray-300, .text-gray-200, .text-gray-100, .text-white,
+.text-slate-900, .text-slate-800, .text-slate-700, .text-slate-600, .text-slate-500,
+.text-slate-400, .text-slate-300, .text-slate-200, .text-slate-100,
+.text-indigo-600, .text-indigo-500, .text-indigo-400, .text-indigo-300,
+.text-red-600, .text-red-500, .text-red-400, .text-red-300,
+.text-green-600, .text-green-500, .text-green-400, .text-green-300,
+.text-blue-600, .text-blue-500, .text-blue-400, .text-blue-300 {
+  color: #000000 !important;
+}
+
+/* Override any existing background color classes */
+.bg-gray-950, .bg-gray-900, .bg-gray-800, .bg-gray-700, .bg-gray-600, .bg-gray-500,
+.bg-gray-400, .bg-gray-300, .bg-gray-200, .bg-gray-100, .bg-gray-50,
+.bg-slate-950, .bg-slate-900, .bg-slate-800, .bg-slate-700, .bg-slate-600, .bg-slate-500,
+.bg-slate-400, .bg-slate-300, .bg-slate-200, .bg-slate-100, .bg-slate-50,
+.bg-black, .bg-white,
+.bg-indigo-600, .bg-indigo-500, .bg-indigo-400, .bg-indigo-300, .bg-indigo-200, .bg-indigo-100, .bg-indigo-50,
+.bg-red-600, .bg-red-500, .bg-red-400, .bg-red-300, .bg-red-200, .bg-red-100, .bg-red-50,
+.bg-green-600, .bg-green-500, .bg-green-400, .bg-green-300, .bg-green-200, .bg-green-100, .bg-green-50,
+.bg-blue-600, .bg-blue-500, .bg-blue-400, .bg-blue-300, .bg-blue-200, .bg-blue-100, .bg-blue-50 {
+  background-color: #ffffff !important;
+}
+
+/* Special handling for buttons and interactive elements - keep them white with black text */
+button, .btn, [role="button"] {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 1px solid #000000 !important;
+}
+
+/* Ensure form inputs are white with black text */
+input, textarea, select {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 1px solid #000000 !important;
+}
+
+/* Ensure modals and overlays are white */
+.modal, .overlay, [role="dialog"], [role="modal"] {
+  background-color: #ffffff !important;
+}
+
+/* Ensure cards and containers are white */
+.card, .container, .section, article, div {
+  background-color: #ffffff !important;
+}
