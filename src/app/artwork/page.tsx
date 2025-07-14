@@ -1,3 +1,4 @@
+
 import ArtworkBrowser from '@/components/artwork/ArtworkBrowser';
 
 export default function ArtworkPage() {
