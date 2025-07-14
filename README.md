@@ -41,4 +41,5 @@ npm i
 npm run dev
 ```
 
+For Project Scope and Development Plan head to [https://github.com/francograaff/emerging-artists/blob/main/Dev-Plan.md](Dev-Plan.md)
 
