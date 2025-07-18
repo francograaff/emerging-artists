@@ -1,10 +1,10 @@
-## Emerging Artists
+# Emerging Artists
 
-# Project Description
+## Project Description
 
 A web platform for discovering and purchasing art made by early-career artists.
 
-# Development 
+## Development 
 
 Download and install NVM (Node Version Manager:[GitHub](https://github.com/nvm-sh/nvm?tab=readme-ov-file)) in order to set up Node.js. The following command installs the current version of node. For the most up to date version head to the README linked above.
 
@@ -47,3 +47,8 @@ Suggestion for user flow:
 
 ![alt text](https://github.com/francograaff/emerging-artists/blob/main/public/images/Flowchart.jpeg)
 
+### Inspirations
+https://carpentersworkshopgallery.com
+https://www.platformart.com
+https://archinect.com/forum
+https://www.nyfa.org
