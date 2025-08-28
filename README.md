@@ -43,7 +43,4 @@ npm run dev
 
 For Project Scope and Development Plan head to [Dev-Plan.md](https://github.com/francograaff/emerging-artists/blob/main/Dev-Plan.md)
 
-Suggestion for user flow:
-
-![alt text](https://github.com/francograaff/emerging-artists/blob/main/public/images/Flowchart.jpeg)
 

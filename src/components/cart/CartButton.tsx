@@ -18,25 +18,24 @@ export default function CartButton({ itemCount = 0 }: CartButtonProps) {
     <>
       <button
         onClick={() => setIsCartOpen(true)}
-        className="relative p-2 text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition-colors"
+        className="relative p-2 text-gray-600 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition-colors"
+        style={{ color: '#4B5563' }} // Explicit color to override any CSS rules
         aria-label={`Open shopping cart with ${itemCount} ${itemCount === 1 ? 'item' : 'items'}`}
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
         </svg>
         {itemCount > 0 && (
-          <span className="absolute -top-1 -right-1 bg-indigo-600 text-white text-xs h-5 w-5 flex items-center justify-center font-semibold">
+          <span className="absolute -top-1 -right-1 text-white text-xs h-5 w-5 flex items-center justify-center font-semibold" 
+                style={{ backgroundColor: '#4f46e5', color: 'white' }}>
             {itemCount > 99 ? '99+' : itemCount}
           </span>
         )}
       </button>
-      
+
       {isMounted && (
-        <CartModal 
-          isOpen={isCartOpen} 
-          onClose={() => setIsCartOpen(false)} 
-        />
+        <CartModal isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
       )}
     </>
   );
-} 
+}

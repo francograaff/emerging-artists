@@ -18,18 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} font-normal text-black bg-white`}>
-        <div className="min-h-screen flex flex-col bg-white">
+      <body className={`${inter.className} font-normal`} style={{ background: 'transparent' }}>
+        <div className="min-h-screen flex flex-col" style={{ background: 'transparent' }}>
           <Header />
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div className="border-t border-gray-200 my-8"></div>
-          </div>
-          <main className="flex-1 pt-16 px-4 sm:px-6 lg:px-8 bg-white">
-            {children}
-          </main>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div className="border-t border-gray-200 my-8"></div>
-          </div>
+          <main className="flex-1" style={{ background: 'transparent' }}>{children}</main>
           <Footer />
         </div>
       </body>

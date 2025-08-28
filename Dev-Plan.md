@@ -157,11 +157,18 @@ Your artist marketplace platform aims to connect emerging artists without galler
 Using the MoSCoW method (Must have, Should have, Could have, Won't have):
 
 #### Must Have (MVP)
-- User authentication and basic profiles
-- Artwork listing creation and display
+- User authentication and basic profiles for artists
+- Artwork listing creation and display (works / artists)
 - Simple search and filtering
-- Secure payment processing
-- Basic messaging between users
+- Secure payment processing (stripe)
+- Basic messaging between users ( collector - user only after purchase)
+
+
+### Artist Page 
+- list by alphabet, 3 per row 
+- filtering options: 
+   - University
+   - MFA/BFA
 
 #### Should Have (Version 1.0)
 - Enhanced artist profiles with portfolio features
@@ -172,6 +179,7 @@ Using the MoSCoW method (Must have, Should have, Could have, Won't have):
 
 #### Could Have (Future Releases)
 - Virtual exhibition spaces
+- Designated collector and artist forum, with different permissions
 - Augmented reality "view in room" feature
 - Artist livestreaming capability
 - Limited edition print fulfillment
