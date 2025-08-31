@@ -17,22 +17,27 @@ export default function NewsletterCard({ newsletter }: NewsletterCardProps) {
   };
 
   return (
-    <article className="bg-white border border-gray-200 p-6 hover:shadow-md transition-shadow duration-200">
+    <article className="bg-white border border-gray-200 p-6 hover:shadow-md transition-shadow duration-200" style={{ backgroundColor: 'white' }}>
       <div className="flex flex-col h-full">
         <header className="mb-4">
           <time 
             dateTime={newsletter.date}
-            className="text-sm font-medium text-indigo-600 dark:text-indigo-400 mb-2 block"
+            className="text-sm font-medium text-indigo-600 mb-2 block"
+            style={{ color: '#4F46E5' }}
           >
             {formatDate(newsletter.date)}
           </time>
-          <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-2">
+          <h2 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2"
+            style={{ color: '#111827' }}
+          >
             {newsletter.title}
           </h2>
         </header>
         
         <div className="flex-1">
-          <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+          <p className="text-gray-600 mb-4 line-clamp-3"
+            style={{ color: '#4B5563' }}
+          >
             {newsletter.summary}
           </p>
         </div>
@@ -40,7 +45,8 @@ export default function NewsletterCard({ newsletter }: NewsletterCardProps) {
         <footer className="mt-auto">
           <Link
             href={newsletter.href}
-            className="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 font-medium transition-colors duration-200 group"
+            className="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-medium transition-colors duration-200 group"
+            style={{ color: '#4F46E5' }}
             aria-label={`Read full newsletter: ${newsletter.title}`}
           >
             Read Full Newsletter

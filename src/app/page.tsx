@@ -143,6 +143,29 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Artist Call to Action */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="md:w-1/3 mb-6 md:mb-0">
+              <h2 className="text-2xl font-bold text-gray-900">Start collecting!</h2>
+            </div>
+            <div className="md:w-1/3 mb-6 md:mb-0">
+              <p className="text-gray-600">
+                Subscribe to our newsletter to gain information on the newest works. 
+              </p>
+            </div>
+            <div className="md:w-1/3 text-center md:text-right">
+              <Link
+                href="/newsletters"
+                className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-md font-medium hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-indigo-300 transition"
+              >
+                Subscribe now
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
