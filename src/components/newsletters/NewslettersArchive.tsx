@@ -4,11 +4,11 @@ import { newsletters } from '@/data/newsletters';
 export default function NewslettersArchive() {
   return (
     <div className="py-8 min-h-screen bg-white" style={{ backgroundColor: 'white' }}>
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto"> 
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-3xl font-bold text-gray-900 mb-4" style={{ color: '#111827' }}>
-            Newsletter Archive
+            Newsletter Archive 
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto" style={{ color: '#4B5563' }}>
             Stay updated with the latest news, artist spotlights, and exclusive content from our community.
@@ -32,8 +32,8 @@ export default function NewslettersArchive() {
           <div className="border-t border-gray-200 my-8"></div>
         </div>
         
-        {/* Footer */}
-        <footer className="text-center mt-12 pt-8">
+        {/* Footeer */}
+        <footer className="text-center mt-12 pt-8"> 
           <p className="text-gray-500" style={{ color: '#6B7280' }}>
             Subscribe to receive our weekly newsletter directly in your inbox.
           </p>
