@@ -82,7 +82,7 @@ export default function ArtistBrowser() {
   };
 
   return (
-    <div className="flex flex-col gap-6 py-8 min-h-screen bg-gray-50 dark:bg-gray-950">
+    <div className="flex flex-col gap-6 py-8 min-h-screen bg-white" style={{ backgroundColor: 'white' }}>
       {/* Search Bar */}
       <ArtistSearchBar artists={MOCK_ARTISTS} onSearch={handleSearch} />
       
@@ -92,10 +92,10 @@ export default function ArtistBrowser() {
       </div>
       
       {/* Artist Grid */}
-      <main className="flex-1">
-        <h1 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Our Artists</h1>
+      <main className="flex-1 bg-white" style={{ backgroundColor: 'white' }}>
+        <h1 className="text-2xl font-bold mb-4 text-gray-900" style={{ color: '#111827' }}>Our Artists</h1>
         <div className="prose prose-lg max-w-prose mb-6">
-          <p className="text-lg text-gray-600 dark:text-gray-400">
+          <p className="text-lg text-gray-600" style={{ color: '#4B5563' }}>
             Discover talented emerging artists from around the world. Each artist brings a unique perspective and style to their work, creating pieces that inspire and challenge.
           </p>
         </div>

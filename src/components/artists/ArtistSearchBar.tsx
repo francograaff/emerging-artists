@@ -78,7 +78,7 @@ export default function ArtistSearchBar({ artists, onSearch }: ArtistSearchBarPr
 
   return (
     <div ref={searchRef} className="relative w-full max-w-xl mx-auto mb-6">
-      <label htmlFor="artist-search" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">
+      <label htmlFor="artist-search" className="block text-sm font-medium text-gray-900 mb-1" style={{ color: '#111827' }}>
         Search for artists by name
       </label>
       <input
@@ -111,11 +111,12 @@ export default function ArtistSearchBar({ artists, onSearch }: ArtistSearchBarPr
               role="option"
               aria-selected={selectedIndex === index}
               className={`px-4 py-2 cursor-pointer flex items-center gap-2 ${
-                selectedIndex === index ? 'bg-indigo-100 dark:bg-indigo-800 text-indigo-900 dark:text-white' : 'text-gray-900 dark:text-gray-200'
+                selectedIndex === index ? 'bg-indigo-100 text-indigo-900' : 'text-gray-900'
               }`}
               onMouseDown={() => handleSuggestionClick(suggestion)}
+              style={{ backgroundColor: selectedIndex === index ? '#EEF2FF' : 'white', color: selectedIndex === index ? '#312E81' : '#111827' }}
             >
-              <span className="text-xs font-semibold uppercase text-indigo-500 dark:text-indigo-300">artist</span>
+              <span className="text-xs font-semibold uppercase text-indigo-500" style={{ color: '#6366F1' }}>artist</span>
               <span>{suggestion}</span>
             </li>
           ))}

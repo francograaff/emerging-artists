@@ -3,7 +3,7 @@ import ArtworkBrowser from '@/components/artwork/ArtworkBrowser';
 
 export default function ArtworkPage() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white" style={{ backgroundColor: 'white' }}>
       <ArtworkBrowser />
     </div>
   );

@@ -25,7 +25,7 @@ export default function ArtistGrid({ artists = [] }: ArtistGridProps) {
             className="group bg-transparent transition-all duration-300 overflow-hidden cursor-pointer border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             aria-label={`View profile of ${artist.name}, ${currentYear - artist.birthYear} years old, based in ${artist.location}`}
           >
-            <div className="relative w-full aspect-[4/3] bg-gray-100 dark:bg-gray-800">
+            <div className="relative w-full aspect-[4/3] bg-gray-100">
               <Image
                 src={artist.image}
                 alt={`Portrait of ${artist.name}`}
@@ -37,17 +37,17 @@ export default function ArtistGrid({ artists = [] }: ArtistGridProps) {
             </div>
 
             {/* Artist Info */}
-            <div className="p-4">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1 truncate group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+            <div className="p-4" style={{ backgroundColor: 'white' }}>
+              <h3 className="text-lg font-semibold text-gray-900 mb-1 truncate group-hover:text-indigo-600 transition-colors" style={{ color: '#111827' }}>
                 {artist.name}
               </h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+              <p className="text-sm text-gray-600 mb-2" style={{ color: '#4B5563' }}>
                 b. {artist.birthYear} • {currentYear - artist.birthYear} years old
               </p>
-              <p className="text-sm text-gray-500 dark:text-gray-500 truncate">
+              <p className="text-sm text-gray-500 truncate" style={{ color: '#6B7280' }}>
                 {artist.location}
               </p>
-              <p className="text-xs text-indigo-600 dark:text-indigo-400 font-medium mt-1">
+              <p className="text-xs text-indigo-600 font-medium mt-1" style={{ color: '#4F46E5' }}>
                 {artist.medium}
               </p>
             </div>

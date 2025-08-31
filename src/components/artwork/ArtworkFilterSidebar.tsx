@@ -50,17 +50,18 @@ export default function ArtworkFilterSidebar({
           <aside className="w-full sm:w-64 bg-white border-r border-gray-200 p-4 sm:p-6 mb-4 sm:mb-0">
       {/* Mobile toggle */}
       <button
-        className="sm:hidden mb-4 text-indigo-600 dark:text-indigo-400 font-semibold focus:outline-none"
+        className="sm:hidden mb-4 text-indigo-600 font-semibold focus:outline-none"
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
         aria-controls="filter-sidebar"
+        style={{ color: '#4F46E5' }}
       >
         {open ? 'Hide Filters' : 'Show Filters'}
       </button>
       <div id="filter-sidebar" className={`${open ? '' : 'hidden'} sm:block`}>
         {/* Medium Filter */}
         <div className="mb-6">
-          <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white">Medium</h3>
+          <h3 className="text-lg font-bold mb-2 text-gray-900" style={{ color: '#111827' }}>Medium</h3>
           <ul className="space-y-1">
             {MEDIUMS.map((medium) => (
               <li key={medium}>
@@ -71,7 +72,7 @@ export default function ArtworkFilterSidebar({
                     checked={selectedMediums.includes(medium)}
                     onChange={() => handleMediumChange(medium)}
                   />
-                  <span className="text-gray-700 dark:text-gray-200">{medium}</span>
+                  <span className="text-gray-900" style={{ color: '#111827' }}>{medium}</span>
                 </label>
               </li>
             ))}
@@ -79,7 +80,7 @@ export default function ArtworkFilterSidebar({
         </div>
         {/* Price Range Filter */}
         <div className="mb-6">
-          <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white">Price Range ($)</h3>
+          <h3 className="text-lg font-bold mb-2 text-gray-900" style={{ color: '#111827' }}>Price Range ($)</h3>
           <div className="flex gap-2 items-center">
             <input
               type="number"
@@ -90,7 +91,7 @@ export default function ArtworkFilterSidebar({
               className="w-20 px-2 py-1 border border-gray-200 bg-gray-50 text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               aria-label="Minimum price"
             />
-            <span className="text-gray-500">-</span>
+            <span className="text-gray-900" style={{ color: '#111827' }}>-</span>
             <input
               type="number"
               min="0"
@@ -104,7 +105,7 @@ export default function ArtworkFilterSidebar({
         </div>
         {/* Artist Location Filter */}
         <div className="mb-6">
-          <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white">Artist Location</h3>
+          <h3 className="text-lg font-bold mb-2 text-gray-900" style={{ color: '#111827' }}>Artist Location</h3>
           <select
             value={location}
             onChange={(e) => handleLocationChange(e.target.value)}
@@ -121,7 +122,7 @@ export default function ArtworkFilterSidebar({
         </div>
         {/* Sort By */}
         <div className="mb-2">
-          <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white">Sort By</h3>
+          <h3 className="text-lg font-bold mb-2 text-gray-900" style={{ color: '#111827' }}>Sort By</h3>
           <select
             value={sortBy}
             onChange={(e) => handleSortChange(e.target.value)}

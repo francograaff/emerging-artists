@@ -73,7 +73,7 @@ export default function ArtworkSearchBar({ onSearchChange, searchQuery }: Artwor
 
   return (
     <div className="relative w-full max-w-xl mx-auto mb-6">
-      <label htmlFor="artwork-search" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">
+      <label htmlFor="artwork-search" className="block text-sm font-medium text-gray-900 mb-1" style={{ color: '#111827' }}>
         Search for artwork, artist, or tag
       </label>
       <input
@@ -106,11 +106,12 @@ export default function ArtworkSearchBar({ onSearchChange, searchQuery }: Artwor
               role="option"
               aria-selected={activeIndex === i}
               className={`px-4 py-2 cursor-pointer flex items-center gap-2 ${
-                activeIndex === i ? 'bg-indigo-100 dark:bg-indigo-800 text-indigo-900 dark:text-white' : 'text-gray-900 dark:text-gray-200'
+                activeIndex === i ? 'bg-indigo-100 text-indigo-900' : 'text-gray-900'
               }`}
+              style={{ backgroundColor: activeIndex === i ? '#EEF2FF' : 'white', color: activeIndex === i ? '#312E81' : '#111827' }}
               onMouseDown={() => handleSuggestionClick(s.value)}
             >
-              <span className="text-xs font-semibold uppercase text-indigo-500 dark:text-indigo-300">{s.type}</span>
+              <span className="text-xs font-semibold uppercase text-indigo-500" style={{ color: '#6366F1' }}>{s.type}</span>
               <span>{s.value}</span>
             </li>
           ))}

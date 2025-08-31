@@ -43,7 +43,7 @@ export default function ArtworkBrowser() {
   };
 
   return (
-    <div className="flex flex-col gap-6 py-8 min-h-screen bg-gray-50 dark:bg-gray-950">
+    <div className="flex flex-col gap-6 py-8 min-h-screen bg-white" style={{ backgroundColor: 'white' }}>
       {/* Search Bar */}
       <ArtworkSearchBar 
         onSearchChange={handleFilterChange.onSearchChange}
@@ -72,10 +72,10 @@ export default function ArtworkBrowser() {
         <div className="hidden sm:block border-l border-gray-200 mx-6"></div>
         
         {/* Artwork Grid */}
-        <main className="flex-1">
+        <main className="flex-1 bg-white">
           <div className="flex justify-between items-center mb-4">
-            <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Browse Artwork</h1>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
+            <h1 className="text-2xl font-bold text-gray-900" style={{ color: '#111827' }}>Browse Artwork</h1>
+            <p className="text-sm text-gray-500" style={{ color: '#6B7280' }}>
               {filteredArtworks.length} of {artworks.length} artworks
             </p>
           </div>
