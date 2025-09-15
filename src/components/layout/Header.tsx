@@ -1,6 +1,7 @@
 "use client";
 import Link from 'next/link';
 import CartButton from '@/components/cart/CartButton';
+import Image from 'next/image';
 
 export default function Header() {
   return (
@@ -13,7 +14,7 @@ export default function Header() {
             className="text-xl font-bold text-indigo-600 hover:text-indigo-700 transition-colors"
             style={{ color: '#4f46e5' }} // Explicit color to override any CSS rules
           >
-            Emerging Artists
+            EmergingArtistsMarket
           </Link>
 
           {/* Navigation */}
@@ -47,10 +48,20 @@ export default function Header() {
             </Link>
           </nav>
 
-          {/* Cart Button */}
-          <CartButton itemCount={3} />
-        </div>
-      </div>
-    </header>
+          <div className="flex items-center gap-2">
+            <CartButton itemCount={3} />
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit our Instagram"
+            >
+              <Image src="/instagramLogo.svg" alt="Instagram Logo" width={28} height={28} />
+            </a>
+          </div>
+
+         </div>
+       </div>
+     </header>
   );
 }

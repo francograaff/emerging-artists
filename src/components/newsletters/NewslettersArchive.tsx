@@ -32,7 +32,7 @@ export default function NewslettersArchive() {
           <div className="border-t border-gray-200 my-8"></div>
         </div>
         
-        {/* Footeer */}
+        {/* Footer */}
         <footer className="text-center mt-12 pt-8"> 
           <p className="text-gray-500" style={{ color: '#6B7280' }}>
             Subscribe to receive our weekly newsletter directly in your inbox.
